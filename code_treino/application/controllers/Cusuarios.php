@@ -9,12 +9,21 @@
 
 				"nome" => $this-> input-> post("nome"),
 				"email" => $this-> input-> post("email"),
-				"senha" => md5($this-> input-> post("senha"))
+				"senha" => $this-> input-> post("senha")
 			);
 
-			$this->load->model("usuarios_model");
-			$this->usuarios_model->salvaUsuario($usuario);
-			$this->load->view('usuario/novo');
+			// $this->load->model("usuarios_model");
+			// $this->usuarios_model->salvaUsuario($usuario);
+			// $this->load->view('usuario/novo');
+
+
+				$this->load->model("usuarios_model");
+				$this->usuarios_model->salvaUsuario($usuario);
+				$this->session->set_flashdata("success", "Usuário Cadastrado com Sucesso!");
+				
+				redirect("Cprodutos/index");
+
+			
 			
 			
 		}

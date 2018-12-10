@@ -5,6 +5,7 @@
 
     <head>
 
+        <link rel="stylesheet" href="<?=base_url("css/bootstrap.css") ?>">
         <meta charset="utf-8" />
         
         <title>Detalhes do Produto</title>

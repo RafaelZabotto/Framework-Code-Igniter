@@ -80,7 +80,7 @@
                         //Campo da Senha
                         echo form_label("Senha", "senha");
 
-                        echo form_input(array("name" => "senha", 
+                        echo form_password(array("name" => "senha", 
                                                 "id" => "senha", 
                                                 "class" => "form-control", 
                                                 "maxlenght" => "255"));  
@@ -131,7 +131,7 @@
                         //Campo da Senha
                         echo form_label("Senha", "senha");
 
-                        echo form_input(array("name" => "senha", 
+                        echo form_password(array("name" => "senha", 
                                                 "id" => "senha", 
                                                 "class" => "form-control", 
                                                 "maxlenght" => "255"));  

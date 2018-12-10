@@ -20,6 +20,7 @@
 
 				$this->session->set_flashdata("danger", "Usuário ou Senha Inválidos!");
 			}
+			
 			redirect('cprodutos/index');
 
 			
